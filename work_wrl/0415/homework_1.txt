@@ -1,0 +1,58 @@
+常用Git命令及说明
+
+1.git init
+新建空目录，生成.git隐藏文件
+
+2.git add 文件名
+添加到暂存区
+
+3.git commit -m "备注"
+暂存区提交到本地仓库
+
+4.git checkout - 文件名
+撤销修改内容
+
+5.git reset HEAD 文件名
+撤销暂存区到工作区
+
+6.git status
+查看工作区，暂存区状态
+红色 代表有修改但是没有提交到暂存区
+绿色 暂存区有内容没有提交到本地仓库
+
+7.git log 
+查看仓库日志
+
+8.git reflog
+查看所有版本
+
+9.git reset version
+回档到指定版本
+
+10.git reset -hard HEAD^
+   git reset -hard HEAD^^^
+   git reset -hard HEAD~n
+   使用HEAD可以回退到上一个/上n个版本
+
+11.系统用户：在C盘用户Administrator目录下方.gitconfg
+   git config -global user.name miao
+   git config -global user.email 1037146872@qq.com
+
+   项目用户：位于项目文件夹下方.git目录config文件
+   git config user.name miao
+   git config ueer.email 138381653984@163.com
+
+12.分支 master 主分支
+git branch dev1 创建分支
+git checkout dev1 切换分支
+git checkout -b dev1 创建并且切换分支
+git branch -d dev1 删除分支
+
+13.git push 
+完整写法可以为 git push origin master 即将本地master分支推送到远程master分支，也可以将
+本地分支dev1推送到远程分支 使用git push origin dev1
+删除远程 dev 分支需要使用 git push origin -delete dev1
+
+
+
+
